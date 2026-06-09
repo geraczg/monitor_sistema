@@ -1,0 +1,21 @@
+Reporte del Monitor de Sistema
+==============================
+Fecha y hora: 2026-06-05 12:30:00
+Estado general: ADVERTENCIA
+Limites: advertencia >= 80% | critico >= 90%
+
+Informacion del sistema
+Sistema operativo: Windows
+Version: 10.0.26200
+Equipo: LAPTOP-DEMO
+
+Uso de recursos
+CPU: 28.5% - OK
+RAM: 84.2% - ADVERTENCIA
+Disco: 61.7% - OK
+
+Alertas
+ADVERTENCIA: RAM alta (84.2%).
+
+Recomendaciones
+RAM: Cerrar aplicaciones pesadas o reiniciar si el consumo no baja.

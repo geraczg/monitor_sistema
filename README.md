@@ -161,16 +161,3 @@ monitor-sistema/
 |-- README.md
 `-- requirements.txt
 ```
-
-## Habilidades que demuestra
-
-- Uso de librerias para monitoreo basico del sistema.
-- Separacion de responsabilidades en modulos pequenos.
-- Manejo de estructuras de datos con `dataclass`.
-- Generacion de reportes locales.
-- Pruebas unitarias para logica de negocio.
-- Preparacion de un repositorio limpio para portafolio.
-
-## Alcance
-
-Este proyecto no pretende reemplazar herramientas profesionales de monitoreo. Su objetivo es mostrar una solucion sencilla, explicable y mantenible para diagnostico basico en un contexto de Soporte TI Jr.

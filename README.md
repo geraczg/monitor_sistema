@@ -1,31 +1,31 @@
 # Monitor de Sistema
 
-Herramienta de consola en Python para diagnostico basico de recursos del sistema. El proyecto esta orientado a un perfil de **Soporte TI Jr** y busca demostrar fundamentos de monitoreo, automatizacion, reportes y buenas practicas con Git/GitHub.
+Herramienta de consola en Python para diagnostico basico de recursos del sistema. 
 
 ## Objetivo
 
-El monitor permite revisar rapidamente el estado de una computadora, detectar consumo alto de recursos y generar un reporte local que puede servir como evidencia inicial antes de escalar un incidente.
+El monitor permite revisar rápidamente el estado de una computadora, detectar consumo alto de recursos y generar un reporte local que puede servir como evidencia inicial antes de escalar un incidente.
 
 ## Funciones principales
 
-- Consulta informacion general del equipo: sistema operativo, version y nombre del host.
+- Consulta información general del equipo: sistema operativo, versión y nombre del host.
 - Mide uso actual de CPU, RAM y disco con `psutil`.
 - Clasifica cada recurso como `OK`, `ADVERTENCIA` o `CRITICO`.
 - Genera alertas cuando CPU, RAM o disco superan los limites definidos.
-- Muestra recomendaciones practicas segun el recurso afectado.
-- Permite ejecutar un diagnostico rapido con `--once`.
-- Permite ajustar los limites de advertencia y critico desde consola.
+- Muestra recomendaciones prácticas según el recurso afectado.
+- Permite ejecutar un diagnóstico rapido con `--once`.
+- Permite ajustar los limites de advertencia y crítico desde consola.
 - Crea reportes TXT dentro de la carpeta `reports`.
-- Incluye pruebas unitarias para diagnostico, alertas y reportes.
+- Incluye pruebas unitarias para diagnóstico, alertas y reportes.
 
-## Tecnologias usadas
+## Tecnologías usadas
 
 - Python 3
 - psutil
 - unittest
 - Git
 
-## Instalacion
+## Instalación
 
 Clona o descarga el repositorio y entra a la carpeta del proyecto:
 
@@ -51,7 +51,7 @@ Instala las dependencias:
 pip install -r requirements.txt
 ```
 
-## Ejecucion
+## Ejecución
 
 Ejecuta el monitor desde la raiz del proyecto:
 
@@ -70,13 +70,13 @@ Menu
 Seleccione una opcion:
 ```
 
-Tambien puedes ejecutar un diagnostico rapido sin entrar al menu:
+Ejecutar un diagnóstico rápido sin entrar al menú:
 
 ```powershell
 python -m src.monitor --once
 ```
 
-Para ajustar los limites de diagnostico:
+Para ajustar los límites de diagnóstico:
 
 ```powershell
 python -m src.monitor --once --warning 75 --critical 90
@@ -104,24 +104,20 @@ Alertas
 
 ## Reportes
 
-Al elegir la opcion `2`, la aplicacion genera un archivo TXT en `reports` con:
+Al elegir la opción `2`, la aplicación genera un archivo TXT en `reports` con:
 
-- fecha y hora del diagnostico;
-- informacion del equipo;
+- fecha y hora del diagnóstico;
+- información del equipo;
 - estado general;
 - uso de CPU, RAM y disco;
 - alertas detectadas;
-- recomendaciones de accion.
+- recomendaciones de acción.
 
 Ejemplo de archivo generado:
 
 ```text
 reports/system_report_20260605_123000.txt
 ```
-
-Tambien se incluye un reporte ficticio de ejemplo en `docs/example_report.txt`.
-
-Los reportes generados se ignoran en Git para mantener limpio el repositorio.
 
 ## Pruebas
 

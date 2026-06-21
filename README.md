@@ -30,7 +30,7 @@ El monitor permite revisar rápidamente el estado de una computadora, detectar c
 Clona o descarga el repositorio y entra a la carpeta del proyecto:
 
 ```powershell
-cd "Monitor de Sistema"
+cd "monitor_sistema"
 ```
 
 Crea un entorno virtual:
